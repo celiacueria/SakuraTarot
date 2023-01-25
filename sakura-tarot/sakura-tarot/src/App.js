@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
-import Cards from "./components/Cards"
+import Cards from "./components/Cards";
+import './index.css';
+
 
 function App() {
   const [cards, setCards] = useState([]); //Se almacenan las cartas
@@ -13,7 +15,7 @@ function App() {
       .then((data) => setCards(data))
       .catch((error) => console.log(error));
   };
-  
+ 
   useEffect(() => {
     fetchCards(initialUrl);
   }, []);
@@ -23,8 +25,8 @@ function App() {
       <Navbar brand="Sakura Tarot" />
 
       <div className="container">
-        <Cards cards={cards} />
-
+        <Cards cards={cards} pulsar  />
+        
       </div>
     </>
   );
