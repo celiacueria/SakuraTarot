@@ -1,16 +1,29 @@
-*{
-    background-color: black;
+.global-container{
+    display: flex;
 }
-
+.container1{
+    width: 70vw;
+    justify-content: left;
+}
 .card {
     width: 200px;
     margin-top: 25px;
-}
 
-.card img {
-    height: 250px
 }
 
 .btn {
     text-align: center;
+}
+
+#result-card{
+    border: 5px;
+    border-style: dashed;
+    border-color: palevioletred;
+    position: fixed;
+    right: 0;
+    height: 50vh;
+    width: 30vw;
+   
+    text-align: center;
+
 }
