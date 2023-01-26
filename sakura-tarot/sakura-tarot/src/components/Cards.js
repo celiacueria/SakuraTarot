@@ -1,13 +1,11 @@
 import React from "react";
 
-
 const Cards = ({ cards = [] }) => {
 
-  
-  const pulsar = () => {
-    this.setState({showText: true})
-  };
-
+ 
+  // const pulsar = () => {
+  //   this.setState({showText: true})
+  // };
 
   return (
     <div className="row">
@@ -19,15 +17,18 @@ const Cards = ({ cards = [] }) => {
               src={item.cardsReverse.sakuraReverse}
               alt=""
             />
-            <button
+            <button key={index}
               style={{ textAlign: "center" }}
               className="btn btn-dark"
-              onClick={pulsar}
+              onClick={() => {
+                document.getElementById('image').src =item.sakuraCard;
+              }}
             >
               {item.kanji}
-              {/* {this.state.showText && <p>Se muestra esto</p>} */}
+             
               
             </button>
+             {/* {this.state.showText && <p>Se muestra esto</p>} */}
           </div>
         </div>
       ))}
