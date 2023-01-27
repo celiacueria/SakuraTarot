@@ -1,3 +1,100 @@
+
+*
+{
+  margin:0;
+  padding:0;
+}
+
+body{
+  background:pink;
+}
+
+.navbar
+{
+background-color: #262626;
+ height: 15vh;
+ text-align: center;
+ padding-left: 60vh;
+}
+
+ul
+{
+  display:flex;
+}
+
+ul li
+{
+  list-style:none;
+  color:#F95C7C;
+  letter-spacing:10px;
+  font-size:4em;
+  font-weight:bold;
+  filter:blur(1px)
+}
+
+
+ul:hover li
+{
+  animation: humo 2s linear forwards;
+}
+
+@keyframes humo
+{
+  0%
+  {
+    transform:rotate(0deg) translateY(0);
+    opacity:1;
+    filter:blur(1px);
+  }
+  
+  100%
+  {
+    transform:rotate(45deg) translateY(-200px);
+    opacity:0;
+    filter:blur(20px);
+  }
+}
+
+ul li:nth-child(1)
+{
+  animation-delay: 0s;
+}
+
+ul li:nth-child(2)
+{
+  animation-delay: .4s;
+}
+
+ul li:nth-child(3)
+{
+  animation-delay: .8s;
+}
+
+ul li:nth-child(4)
+{
+  animation-delay: 1.2s;
+}
+
+ul li:nth-child(5)
+{
+  animation-delay: 1.6s;
+}
+
+ul li:nth-child(6)
+{
+  animation-delay: 2s;
+}
+
+ul li:nth-child(7)
+{
+  animation-delay: 2.4s;
+}
+
+ul li:nth-child(8)
+{
+  animation-delay: 2.8s;
+}
+
 .global-container{
     display: flex;
 }
@@ -7,6 +104,12 @@
     display: flex;
     width: 800px;
     height: 430px;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200vh;
 }
 .card {
     width: 80px;
