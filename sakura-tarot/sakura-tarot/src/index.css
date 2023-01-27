@@ -2,12 +2,26 @@
     display: flex;
 }
 .container1{
-    width: 70vw;
-    justify-content: left;
+    /* width: 70vw;
+    justify-content: left; */
+    display: flex;
+    width: 800px;
+    height: 430px;
 }
 .card {
-    width: 200px;
-    margin-top: 25px;
+    width: 80px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5 ease;
+
+}
+
+.card:hover{
+    cursor: crosshair;
+    width: 85px;
+    opacity: 1;
+    filter: contrast(120%);
 
 }
 

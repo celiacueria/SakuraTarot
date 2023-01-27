@@ -15,26 +15,25 @@ function App() {
       .then((data) => setCards(data))
       .catch((error) => console.log(error));
   };
- 
+
   useEffect(() => {
-    fetchCards(initialUrl);
+    fetchCards();
   }, []);
 
   return (
     <>
       <Navbar brand="Sakura Tarot" />
-     <div className="global-container">
-      <div className="container1">
-      
-        <Cards cards={cards} pulsar  />
-      </div>
+      <div className="global-container">
+        <div className="container1">
 
-      <div id="result-card">
-       <p id="title-result">Tu resultado:</p> 
-    <p id="result"> </p>
+          <Cards cards={cards} />
+        </div>
+
+        <div id="result-card">
+          <p id="title-result">Tu resultado:</p>
+          <p id="result"> </p>
+        </div>
       </div>
-      </div>
-      
     </>
   );
 }
