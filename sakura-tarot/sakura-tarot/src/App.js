@@ -23,11 +23,18 @@ function App() {
   return (
     <>
       <Navbar brand="Sakura Tarot" />
-
-      <div className="container">
+     <div className="global-container">
+      <div className="container1">
+      
         <Cards cards={cards} pulsar  />
-        
       </div>
+
+      <div id="result-card">
+       <p id="title-result">Tu resultado:</p> 
+    <p id="result"> </p>
+      </div>
+      </div>
+      
     </>
   );
 }
