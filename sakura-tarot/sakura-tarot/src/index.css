@@ -113,8 +113,8 @@ ul li:nth-child(8)
     height: 200vh;
    
 }
-.card {
-    width: 80px;
+.cards {
+    width: 60px;
     flex-grow: 1;
     object-fit: cover;
     opacity: .8;
@@ -122,17 +122,20 @@ ul li:nth-child(8)
 
 }
 
-.card:hover{
+.cards img{
+    height: 300px;
+}
+
+.cards:hover{
     cursor: crosshair;
-    width: 85px;
+    width: 60px;
     opacity: 1;
     filter: contrast(120%);
+    z-index: 1;
 
 }
 
-.btn {
-    text-align: center;
-}
+
 
 #result-card{
     border: 5px;
