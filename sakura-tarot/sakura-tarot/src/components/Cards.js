@@ -4,15 +4,15 @@ import React from "react";
 
 const Cards = ({ cards = [] }) => {
 
-
-  cards.sort(() => Math.random() - 0.5);
+  let sort = cards.sort(() => Math.random() - 0.5)
+  let slice = sort.slice(0, 20)
   let i = 0;
 
 
   return (
 
     <div className="row">
-      {cards.map((item, index) => (
+      {slice.map((item, index) => (
         <div key={index} className="col">
 
           <div className="card">
