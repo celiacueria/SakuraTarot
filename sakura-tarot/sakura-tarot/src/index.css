@@ -6,13 +6,13 @@
 }
 
 body{
-  background:pink;
+  background: #FFC3A1;
 }
 
 .navbar
 {
-background-color: #262626;
- height: 15vh;
+background-color: #A75D5D;
+ height: 10vh;
  text-align: center;
  padding-left: 60vh;
 }
@@ -25,11 +25,10 @@ ul
 ul li
 {
   list-style:none;
-  color:#F95C7C;
+  color:#F0997D;
   letter-spacing:10px;
-  font-size:4em;
+  font-size:3em;
   font-weight:bold;
-  filter:blur(1px)
 }
 
 
@@ -104,13 +103,16 @@ ul li:nth-child(8)
     display: flex;
     width: 800px;
     height: 430px;
+    margin-left: 20vh;
+    margin-top: 5vh;
 }
 
 .cards-container{
     display: flex;
     flex-wrap: wrap;    
     overflow: hidden;
-    height: 200vh;
+    height: 250vh;
+    width: 250vh;
    
 }
 .cards {
@@ -123,8 +125,10 @@ ul li:nth-child(8)
 }
 
 .cards img{
-    height: 300px;
+    height: 250px;
 }
+
+
 
 .cards:hover{
     cursor: crosshair;
@@ -137,15 +141,22 @@ ul li:nth-child(8)
 
 
 
+
 #result-card{
-    border: 5px;
-    border-style: dashed;
-    border-color: palevioletred;
-    position: fixed;
+    background-color: #F0997D;
     right: 0;
     height: 50vh;
     width: 30vw;
-   
     text-align: center;
+    margin-top: 10vh;
+    margin-left: 15vh;
+    border-style: inset;
+    
+}
+
+#title-result{
+    letter-spacing: 0.5vh;
+    color: #A75D5D;
+    font-weight: bold;
 
 }

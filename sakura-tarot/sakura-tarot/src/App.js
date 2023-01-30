@@ -30,7 +30,7 @@ function App() {
         </div>
 
         <div id="result-card">
-          <p id="title-result">Tu resultado:</p>
+          <p id="title-result">TÚ RESULTADO</p>
           <p id="result"> </p>
         </div>
       </div>
