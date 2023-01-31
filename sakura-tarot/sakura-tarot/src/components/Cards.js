@@ -10,7 +10,7 @@ const Cards = ({ cards = [] }) => {
       {slice.map((item, index) => (
         <div className="cards">
           <img
-            id={index}
+            id= {index}
             src={item.cardsReverse.sakuraReverse}
             alt=""
             onClick={() => {
@@ -19,7 +19,8 @@ const Cards = ({ cards = [] }) => {
                 document.getElementById(index).src = item.sakuraCard;
                 document.getElementById("result").innerHTML +=
                   "</br>   " + item.meaning;
-              } else {
+
+                } else {
                 alert("No puedes seleccionar mas cartas. Reinicia el juego");
               }
             }}

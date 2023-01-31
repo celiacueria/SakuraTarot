@@ -1,6 +1,10 @@
+
 import React, { useEffect, useState } from "react";
+
 import Navbar from "./components/Navbar";
 import Cards from "./components/Cards";
+import Button from "./components/Button"
+
 import './index.css';
 
 
@@ -16,24 +20,38 @@ function App() {
       .catch((error) => console.log(error));
   };
 
+
   useEffect(() => {
     fetchCards();
   }, []);
 
   return (
     <>
+  
       <Navbar brand="Sakura Tarot" />
+
       <div className="global-container">
+  
         <div className="container1">
 
           <Cards cards={cards} />
-        </div>
 
+        </div>
+        <div class="right">
         <div id="result-card">
+          
           <p id="title-result">TÚ RESULTADO</p>
+         
           <p id="result"> </p>
+          <Button />
+   
+        </div>
+        <div class="witch">
+  
+    </div>
         </div>
       </div>
+
     </>
   );
 }

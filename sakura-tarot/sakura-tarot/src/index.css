@@ -6,13 +6,14 @@
 }
 
 body{
-  background: #FFC3A1;
+  background-image: url(../fondo5.jpg);
 }
 
 .navbar
 {
-background-color: #A75D5D;
- height: 10vh;
+background-color: rgba(0, 0, 0, 0.544);
+/* background-image: url("../nieve.gif"); */
+ height: 12vh;
  text-align: center;
  padding-left: 60vh;
 }
@@ -25,7 +26,7 @@ ul
 ul li
 {
   list-style:none;
-  color:#F0997D;
+  color:#c86989;
   letter-spacing:10px;
   font-size:3em;
   font-weight:bold;
@@ -119,22 +120,30 @@ ul li:nth-child(8)
     width: 60px;
     flex-grow: 1;
     object-fit: cover;
-    opacity: .8;
+    opacity: 1;
     transition: .5 ease;
+    filter: contrast(80%);
 
 }
 
 .cards img{
     height: 250px;
+    padding: 1vh;
 }
+
+
+
+
+
+
+
 
 
 
 .cards:hover{
     cursor: crosshair;
     width: 60px;
-    opacity: 1;
-    filter: contrast(120%);
+    filter: contrast(150%);
     z-index: 1;
 
 }
@@ -143,20 +152,41 @@ ul li:nth-child(8)
 
 
 #result-card{
-    background-color: #F0997D;
+    background-color: #eab5c7;
     right: 0;
-    height: 50vh;
+    height: 45vh;
     width: 30vw;
     text-align: center;
     margin-top: 10vh;
     margin-left: 15vh;
     border-style: inset;
+    background-image: url("../rosa.gif");
     
 }
 
 #title-result{
     letter-spacing: 0.5vh;
-    color: #A75D5D;
+    color: black;
     font-weight: bold;
 
+}
+
+
+
+/*Componente button*/
+
+.button {
+    background-color: #c86989;
+    text-decoration: none;
+    color: #eab5c7;
+    padding: 0.5vh;
+    border-radius: 10%;
+    margin-top: 200vh;
+}
+
+.button:hover{
+    background-color: #eab5c7;
+    color: #c86989;
+    border-color: #c86989;
+    border-style: ridge;
 }
