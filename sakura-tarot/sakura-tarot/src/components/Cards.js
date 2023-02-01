@@ -9,22 +9,24 @@ const Cards = ({ cards = [] }) => {
     <div className="row">
       {slice.map((item, index) => (
         <div className="cards">
-          <img
-            id= {index}
-            src={item.cardsReverse.sakuraReverse}
-            alt=""
-            onClick={() => {
-              if (i < 3) {
+<img id={index} src={item.cardsReverse.sakuraReverse} alt="" onClick={() => {
+              if (i < 1) {
                 i++;
                 document.getElementById(index).src = item.sakuraCard;
-                document.getElementById("result").innerHTML +=
-                  "</br>   " + item.meaning;
-
-                } else {
-                alert("No puedes seleccionar mas cartas. Reinicia el juego");
+                document.getElementById("result").innerHTML += "</br><span class='time'>   Pasado: </span>" + item.meaning;
+              } else if (i < 2) {
+                i++;
+                document.getElementById(index).src = item.sakuraCard;
+                document.getElementById("result").innerHTML += "</br><span class='time'>   Presente: </span>"  + item.meaning;
+              } else if (i < 3) {
+                i++;
+                document.getElementById(index).src = item.sakuraCard;
+                document.getElementById("result").innerHTML += "</br><span class='time'>   Futuro : </span>"  + item.meaning;
+              }else if (i>=3) {
+                alert("No puedes seleccionar más cartas")
               }
-            }}
-          />
+
+            }} />
         </div>
       ))}
     </div>
