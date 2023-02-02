@@ -6,7 +6,7 @@
 }
 
 body{
-  background-image: url(../fondo5.jpg);
+  background-image: url(../img/fondo5.jpg);
 }
 
 .navbar
@@ -160,7 +160,7 @@ ul li:nth-child(8)
     margin-top: 10vh;
     margin-left: 15vh;
     border-style: inset;
-    background-image: url("../rosa.gif");
+    background-image: url("../img/rosa.gif");
     
 }
 
@@ -193,3 +193,4 @@ ul li:nth-child(8)
     border-color: #c86989;
     border-style: ridge;
 }
+
