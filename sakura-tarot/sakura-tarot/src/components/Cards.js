@@ -2,7 +2,7 @@ import React from "react";
 
 const Cards = ({ cards = [] }) => {
   let sort = cards.sort(() => Math.random() - 0.5);
-  let slice = sort.slice(0, 20);
+  let slice = sort.slice(0, 18);
   let i = 0;
 
   return (

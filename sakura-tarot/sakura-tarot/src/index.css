@@ -1,196 +1,174 @@
-
-*
-{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
+body {
   background-image: url(../img/fondo5.jpg);
 }
 
-.navbar
-{
-background-color: rgba(0, 0, 0, 0.544);
-/* background-image: url("../nieve.gif"); */
- height: 12vh;
- text-align: center;
- padding-left: 60vh;
+.navbar {
+  background-color: rgba(0, 0, 0, 0.544);
+  /* background-image: url("../nieve.gif"); */
+  height: 12vh;
+  text-align: center;
+  padding-left: 60vh;
 }
 
-ul
-{
-  display:flex;
+ul {
+  display: flex;
 }
 
-ul li
-{
-  list-style:none;
-  color:#c86989;
-  letter-spacing:10px;
-  font-size:3em;
-  font-weight:bold;
+ul li {
+  list-style: none;
+  color: #c86989;
+  letter-spacing: 10px;
+  font-size: 3em;
+  font-weight: bold;
 }
 
 
-ul:hover li
-{
+ul:hover li {
   animation: humo 2s linear forwards;
 }
 
-@keyframes humo
-{
-  0%
-  {
-    transform:rotate(0deg) translateY(0);
-    opacity:1;
-    filter:blur(1px);
+@keyframes humo {
+  0% {
+    transform: rotate(0deg) translateY(0);
+    opacity: 1;
+    filter: blur(1px);
   }
-  
-  100%
-  {
-    transform:rotate(45deg) translateY(-200px);
-    opacity:0;
-    filter:blur(20px);
+
+  100% {
+    transform: rotate(45deg) translateY(-200px);
+    opacity: 0;
+    filter: blur(20px);
   }
 }
 
-ul li:nth-child(1)
-{
+ul li:nth-child(1) {
   animation-delay: 0s;
 }
 
-ul li:nth-child(2)
-{
+ul li:nth-child(2) {
   animation-delay: .4s;
 }
 
-ul li:nth-child(3)
-{
+ul li:nth-child(3) {
   animation-delay: .8s;
 }
 
-ul li:nth-child(4)
-{
+ul li:nth-child(4) {
   animation-delay: 1.2s;
 }
 
-ul li:nth-child(5)
-{
+ul li:nth-child(5) {
   animation-delay: 1.6s;
 }
 
-ul li:nth-child(6)
-{
+ul li:nth-child(6) {
   animation-delay: 2s;
 }
 
-ul li:nth-child(7)
-{
+ul li:nth-child(7) {
   animation-delay: 2.4s;
 }
 
-ul li:nth-child(8)
-{
+ul li:nth-child(8) {
   animation-delay: 2.8s;
 }
 
-.global-container{
-    display: flex;
+.global-container {
+  display: flex;
 }
-.container1{
-    /* width: 70vw;
+
+.container1 {
+  /* width: 70vw;
     justify-content: left; */
-    display: flex;
-    width: 800px;
-    height: 430px;
-    margin-left: 20vh;
-    margin-top: 5vh;
+  display: flex;
+  width: 550px;
+  height: 430px;
+  margin-left: 30vh;
+  margin-top: 5vh;
 }
 
-.cards-container{
-    display: flex;
-    flex-wrap: wrap;    
-    overflow: hidden;
-    height: 250vh;
-    width: 250vh;
-   
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  height: 250vh;
+  width: 250vh;
+
 }
+
 .cards {
-    width: 60px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: 1;
-    transition: .5 ease;
-    filter: contrast(80%);
+  width: 60px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 1;
+  transition: .5 ease;
+  filter: contrast(80%);
 
 }
 
-.cards img{
-    height: 250px;
-    padding: 1vh;
+.cards img {
+  height: 250px;
+  padding: 1vh;
 }
 
 
 
-
-
-
-
-
-
-
-.cards:hover{
-    cursor: crosshair;
-    width: 60px;
-    filter: contrast(150%);
-    z-index: 1;
+.cards:hover {
+  cursor: crosshair;
+  width: 60px;
+  filter: contrast(150%);
+  z-index: 1;
 
 }
 
 
 
 
-#result-card{
-    background-color: #eab5c7;
-    right: 0;
-    height: 45vh;
-    width: 30vw;
-    text-align: center;
-    margin-top: 10vh;
-    margin-left: 15vh;
-    border-style: inset;
-    background-image: url("../img/rosa.gif");
-    
-}
-
-#title-result{
-    letter-spacing: 0.5vh;
-    color: black;
-    font-weight: bold;
+#result-card {
+  background-color: #eab5c7;
+  right: 0;
+  height: 45vh;
+  width: 30vw;
+  text-align: center;
+  margin-top: 10vh;
+  margin-left: 15vh;
+  border-style: inset;
+  background-image: url("../img/rosa.gif");
 
 }
+
+#title-result {
+  letter-spacing: 0.5vh;
+  color: black;
+  font-weight: bold;
+
+}
+
 .time {
-    font-weight: bolder;
-  }
+  font-weight: bolder;
+}
 
 
 
 /*Componente button*/
 
 .button {
-    background-color: #c86989;
-    text-decoration: none;
-    color: #eab5c7;
-    padding: 0.5vh;
-    border-radius: 10%;
-    margin-top: 200vh;
+  background-color: #c86989;
+  text-decoration: none;
+  color: #eab5c7;
+  padding: 0.5vh;
+  border-radius: 10%;
+  margin-top: 200vh;
 }
 
-.button:hover{
-    background-color: #eab5c7;
-    color: #c86989;
-    border-color: #c86989;
-    border-style: ridge;
+.button:hover {
+  background-color: #eab5c7;
+  color: #c86989;
+  border-color: #c86989;
+  border-style: ridge;
 }
-
