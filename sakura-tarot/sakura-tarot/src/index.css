@@ -11,12 +11,14 @@ body {
   background-color: rgba(0, 0, 0, 0.544);
   /* background-image: url("../nieve.gif"); */
   height: 12vh;
+  width: 100% ;
   text-align: center;
   padding-left: 60vh;
 }
 
 ul {
-  display: flex;
+  display: flex;text-align: center;
+
 }
 
 ul li {
